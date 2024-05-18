@@ -1,0 +1,533 @@
+Watchdog 2024/05/18 20:13:33 (INFO): using "/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/config.yaml" cluster config for instance "instance003"
+started
+2024-05-18 20:13:34.054 [45291] main/104/interactive I> Tarantool 3.1.0-0-g96f6d88 Darwin-arm64-Release
+2024-05-18 20:13:34.055 [45291] main/104/interactive I> log level 5 (INFO)
+2024-05-18 20:13:34.055 [45291] main/104/interactive I> wal/engine cleanup is paused
+2024-05-18 20:13:34.055 [45291] main/104/interactive I> mapping 268435456 bytes for memtx tuple arena...
+2024-05-18 20:13:34.055 [45291] main/104/interactive I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2024-05-18 20:13:34.055 [45291] main/104/interactive I> mapping 134217728 bytes for vinyl tuple arena...
+2024-05-18 20:13:34.057 [45291] main/104/interactive I> update replication_synchro_quorum = 1
+2024-05-18 20:13:34.057 [45291] main/104/interactive I> instance uuid ad1e4566-497b-4cf0-8f93-438f1a7f7379
+2024-05-18 20:13:34.058 [45291] main/104/interactive I> tx_binary: bound to 127.0.0.1:3303
+2024-05-18 20:13:34.058 [45291] main/104/interactive I> connecting to 3 replicas
+2024-05-18 20:13:34.058 [45291] main/112/applier/replicator@127.0.0.1:3301 I> remote master 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at 127.0.0.1:3301 running Tarantool 3.1.0
+2024-05-18 20:13:34.058 [45291] main/113/applier/replicator@127.0.0.1:3302 I> remote master 36952efe-e2ad-49df-b2da-91913b41740d at 127.0.0.1:3302 running Tarantool 3.1.0
+2024-05-18 20:13:34.058 [45291] main/114/applier/replicator@127.0.0.1:3303 I> remote master ad1e4566-497b-4cf0-8f93-438f1a7f7379 at 127.0.0.1:3303 running Tarantool 3.1.0
+2024-05-18 20:13:34.059 [45291] main/104/interactive I> connected to 3 replicas
+2024-05-18 20:13:34.060 [45291] main/112/applier/replicator@127.0.0.1:3301 I> failed to authenticate
+2024-05-18 20:13:34.060 [45291] main/112/applier/replicator@127.0.0.1:3301 box.cc:4283 E> ER_LOADING: Instance bootstrap hasn't finished yet
+2024-05-18 20:13:34.060 [45291] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 20:13:35.064 [45291] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 20:13:35.064 [45291] main/104/interactive I> bootstrapping replica from 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at 127.0.0.1:3301
+2024-05-18 20:13:35.066 [45291] main/112/applier/replicator@127.0.0.1:3301 I> replicaset name: replicaset001
+2024-05-18 20:13:35.066 [45291] main/112/applier/replicator@127.0.0.1:3301 I> replicaset uuid e4c19019-0d29-485c-95bc-33062ece2d8a
+2024-05-18 20:13:35.088 [45291] main/112/applier/replicator@127.0.0.1:3301 I> assigned id 1 to replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> update replication_synchro_quorum = 1
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> assigned name instance001 to replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> initial data received
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> assigned id 2 to replica ad1e4566-497b-4cf0-8f93-438f1a7f7379
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> update replication_synchro_quorum = 2
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: fencing paused
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> assigned name instance003 to replica ad1e4566-497b-4cf0-8f93-438f1a7f7379
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> assigned id 3 to replica 36952efe-e2ad-49df-b2da-91913b41740d
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> update replication_synchro_quorum = 2
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> assigned name instance002 to replica 36952efe-e2ad-49df-b2da-91913b41740d
+2024-05-18 20:13:35.089 [45291] main/112/applier/replicator@127.0.0.1:3301 I> final data received
+2024-05-18 20:13:35.089 [45291] snapshot/101/main I> saving snapshot `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000009.snap.inprogress'
+2024-05-18 20:13:35.090 [45291] snapshot/101/main I> done
+2024-05-18 20:13:35.091 [45291] main/104/interactive I> RAFT: start state machine
+2024-05-18 20:13:35.091 [45291] main/104/interactive I> ready to accept requests
+2024-05-18 20:13:35.091 [45291] main/104/interactive I> synchronizing with 3 replicas
+2024-05-18 20:13:35.091 [45291] main/104/interactive C> failed to synchronize with 2 out of 3 replicas
+2024-05-18 20:13:35.091 [45291] main/104/interactive I> entering orphan mode
+2024-05-18 20:13:35.091 [45291] main/104/interactive/box.load_cfg I> set 'instance_name' configuration option to "instance003"
+2024-05-18 20:13:35.091 [45291] main/104/interactive/box.load_cfg I> set 'election_mode' configuration option to "candidate"
+2024-05-18 20:13:35.091 [45291] main/104/interactive/box.load_cfg I> set 'custom_proc_title' configuration option to "tarantool - instance003"
+2024-05-18 20:13:35.091 [45291] main/104/interactive/box.load_cfg I> set 'log_nonblock' configuration option to false
+2024-05-18 20:13:35.091 [45291] main/104/interactive/box.load_cfg I> set 'replication' configuration option to ["replicator@127.0.0.1:3301","replicator@127.0.0.1:3302","replicator@127.0.0.1:3303"]
+2024-05-18 20:13:35.091 [45291] main/104/interactive/box.load_cfg I> set 'replicaset_name' configuration option to "replicaset001"
+2024-05-18 20:13:35.091 [45291] main/104/interactive/box.load_cfg I> set 'listen' configuration option to [{"uri":"127.0.0.1:3303"}]
+2024-05-18 20:13:35.091 [45291] main/107/checkpoint_daemon I> scheduled next checkpoint for Sat May 18 21:20:49 2024
+2024-05-18 20:13:35.091 [45291] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 20:13:35.091 [45291] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 9} local vclock {1: 9}
+2024-05-18 20:13:35.091 [45291] main/104/interactive/box.load_cfg I> set 'metrics' configuration option to {"labels":{"alias":"instance003"},"include":["all"],"exclude":[]}
+2024-05-18 20:13:35.091 [45291] main I> entering the event loop
+2024-05-18 20:13:35.091 [45291] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 20:13:35.091 [45291] main/111/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 23, aka 127.0.0.1:3303, peer of 127.0.0.1:57438
+2024-05-18 20:13:35.091 [45291] main/111/main I> remote vclock {1: 9} local vclock {1: 9}
+2024-05-18 20:13:35.092 [45291] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 2, vote: 1, leader: 1, state: leader} from 1
+2024-05-18 20:13:35.092 [45291] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: received a newer term from 1
+2024-05-18 20:13:35.092 [45291] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: bump term to 2, follow
+2024-05-18 20:13:35.092 [45291] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 20:13:35.092 [45291] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: leader is 1, follow
+2024-05-18 20:13:35.092 [45291] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 2, vote: 1, leader: 1, state: leader} from 1
+2024-05-18 20:13:35.092 [45291] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 1
+2024-05-18 20:13:35.092 [45291] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 20:13:35.092 [45291] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 9} local vclock {1: 9}
+2024-05-18 20:13:35.092 [45291] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 1, leader: 1, leader is seen: true, state: follower} from 3
+2024-05-18 20:13:35.092 [45291] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: the message is ignored due to outdated term - current term is 2
+2024-05-18 20:13:35.092 [45291] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 1, state: follower} from 3
+2024-05-18 20:13:35.092 [45291] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: the message is ignored due to outdated term - current term is 2
+2024-05-18 20:13:35.092 [45291] main/119/raft_worker I> RAFT: persisted state {term: 2}
+2024-05-18 20:13:35.092 [45291] relay/127.0.0.1:57438/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000009.xlog'
+2024-05-18 20:13:35.092 [45291] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 2, leader: 1, leader is seen: true, state: follower} from 3
+2024-05-18 20:13:36.093 [45291] main/124/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 27, aka 127.0.0.1:3303, peer of 127.0.0.1:57457
+2024-05-18 20:13:36.093 [45291] main/124/main I> remote vclock {1: 9} local vclock {0: 1, 1: 9}
+2024-05-18 20:13:36.094 [45291] main/106/gc I> wal/engine cleanup is resumed
+2024-05-18 20:13:36.094 [45291] relay/127.0.0.1:57457/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000009.xlog'
+2024-05-18 20:13:36.095 [45291] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: fencing resumed
+2024-05-18 20:13:36.096 [45291] main/112/applier/replicator@127.0.0.1:3301 I> leaving orphan mode
+2024-05-18 20:48:10.619 [45291] applier_1/103/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 20:48:10.619 [45291] applier_1/103/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 20:48:10.619 [45291] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 20:48:10.619 [45291] main/112/applier/replicator@127.0.0.1:3301 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 20, aka 127.0.0.1:57449, peer of 127.0.0.1:3301: Broken pipe
+2024-05-18 20:48:10.619 [45291] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 20:48:10.620 [45291] relay/127.0.0.1:57457/101/main coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 27, aka 127.0.0.1:3303, peer of 127.0.0.1:57457: Broken pipe
+2024-05-18 20:48:10.620 [45291] relay/127.0.0.1:57457/101/main I> exiting the relay loop
+2024-05-18 20:48:10.721 [45291] applier_1/105/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302' has been cancelled
+2024-05-18 20:48:10.721 [45291] applier_1/105/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302': exiting
+2024-05-18 20:48:10.721 [45291] main/113/applier/replicator@127.0.0.1:3302 I> can't read row
+2024-05-18 20:48:10.721 [45291] main/113/applier/replicator@127.0.0.1:3302 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 21, aka 127.0.0.1:57437, peer of 127.0.0.1:3302: Broken pipe
+2024-05-18 20:48:10.721 [45291] main/113/applier/replicator@127.0.0.1:3302 I> will retry every 1.00 second
+2024-05-18 20:48:10.722 [45291] relay/127.0.0.1:57438/101/main coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 23, aka 127.0.0.1:3303, peer of 127.0.0.1:57438: Broken pipe
+2024-05-18 20:48:10.722 [45291] relay/127.0.0.1:57438/101/main I> exiting the relay loop
+2024-05-18 20:48:10.823 [45291] main C> got signal 2 - Interrupt: 2
+2024-05-18 20:48:10.823 [45291] main/126/iproto.shutdown I> tx_binary: stopped
+2024-05-18 20:48:10.824 [45291] main/103/on_shutdown I> leaving orphan mode
+Watchdog 2024/05/18 20:48:10 (INFO): the Instance has shutdown.
+Watchdog 2024/05/18 20:48:18 (INFO): using "/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/config.yaml" cluster config for instance "instance003"
+started
+2024-05-18 20:48:18.361 [45783] main/104/interactive I> Tarantool 3.1.0-0-g96f6d88 Darwin-arm64-Release
+2024-05-18 20:48:18.361 [45783] main/104/interactive I> log level 5 (INFO)
+2024-05-18 20:48:18.361 [45783] main/104/interactive I> wal/engine cleanup is paused
+2024-05-18 20:48:18.361 [45783] main/104/interactive I> mapping 268435456 bytes for memtx tuple arena...
+2024-05-18 20:48:18.361 [45783] main/104/interactive I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2024-05-18 20:48:18.361 [45783] main/104/interactive I> mapping 134217728 bytes for vinyl tuple arena...
+2024-05-18 20:48:18.361 [45783] main/104/interactive/box.upgrade I> Recovering snapshot with schema version 3.1.0
+2024-05-18 20:48:18.362 [45783] main/104/interactive I> update replication_synchro_quorum = 1
+2024-05-18 20:48:18.362 [45783] main/104/interactive I> instance uuid ad1e4566-497b-4cf0-8f93-438f1a7f7379
+2024-05-18 20:48:18.362 [45783] main/104/interactive I> instance vclock {0: 1, 1: 13}
+2024-05-18 20:48:18.362 [45783] main/104/interactive I> tx_binary: bound to 127.0.0.1:3303
+2024-05-18 20:48:18.362 [45783] main/104/interactive I> connecting to 3 replicas
+2024-05-18 20:48:18.362 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't connect to master
+2024-05-18 20:48:18.362 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:83 E> SocketError: connect, called on fd 23, aka 127.0.0.1:57772: Connection refused
+2024-05-18 20:48:18.362 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 20:48:18.363 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote master 36952efe-e2ad-49df-b2da-91913b41740d at 127.0.0.1:3302 running Tarantool 3.1.0
+2024-05-18 20:48:18.363 [45783] main/114/applier/replicator@127.0.0.1:3303 I> remote master ad1e4566-497b-4cf0-8f93-438f1a7f7379 at 127.0.0.1:3303 running Tarantool 3.1.0
+2024-05-18 20:48:19.363 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote master 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at 127.0.0.1:3301 running Tarantool 3.1.0
+2024-05-18 20:48:19.364 [45783] main/104/interactive I> connected to 3 replicas
+2024-05-18 20:48:19.364 [45783] main/104/interactive I> recovery start
+2024-05-18 20:48:19.364 [45783] main/104/interactive I> recovering from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000009.snap'
+2024-05-18 20:48:19.364 [45783] main/104/interactive I> replicaset name: replicaset001
+2024-05-18 20:48:19.364 [45783] main/104/interactive I> replicaset uuid e4c19019-0d29-485c-95bc-33062ece2d8a
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> assigned id 1 to replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> update replication_synchro_quorum = 1
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> assigned name instance001 to replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> assigned id 2 to replica ad1e4566-497b-4cf0-8f93-438f1a7f7379
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> update replication_synchro_quorum = 2
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> RAFT: fencing paused
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> assigned name instance003 to replica ad1e4566-497b-4cf0-8f93-438f1a7f7379
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> assigned id 3 to replica 36952efe-e2ad-49df-b2da-91913b41740d
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> update replication_synchro_quorum = 2
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> assigned name instance002 to replica 36952efe-e2ad-49df-b2da-91913b41740d
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000009.xlog'
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> done `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000009.xlog'
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 20:48:19.380 [45783] main/104/interactive I> done `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 20:48:19.381 [45783] main/104/interactive I> RAFT: start state machine
+2024-05-18 20:48:19.381 [45783] main/104/interactive I> ready to accept requests
+2024-05-18 20:48:19.381 [45783] main/104/interactive I> synchronizing with 3 replicas
+2024-05-18 20:48:19.381 [45783] main/104/interactive C> failed to synchronize with 2 out of 3 replicas
+2024-05-18 20:48:19.381 [45783] main/104/interactive I> entering orphan mode
+2024-05-18 20:48:19.381 [45783] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 20:48:19.381 [45783] main/104/interactive/box.load_cfg I> set 'instance_name' configuration option to "instance003"
+2024-05-18 20:48:19.381 [45783] main/104/interactive/box.load_cfg I> set 'election_mode' configuration option to "candidate"
+2024-05-18 20:48:19.381 [45783] main/104/interactive/box.load_cfg I> set 'custom_proc_title' configuration option to "tarantool - instance003"
+2024-05-18 20:48:19.381 [45783] main/104/interactive/box.load_cfg I> set 'log_nonblock' configuration option to false
+2024-05-18 20:48:19.381 [45783] main/104/interactive/box.load_cfg I> set 'replication' configuration option to ["replicator@127.0.0.1:3301","replicator@127.0.0.1:3302","replicator@127.0.0.1:3303"]
+2024-05-18 20:48:19.381 [45783] main/104/interactive/box.load_cfg I> set 'replicaset_name' configuration option to "replicaset001"
+2024-05-18 20:48:19.381 [45783] main/104/interactive/box.load_cfg I> set 'listen' configuration option to [{"uri":"127.0.0.1:3303"}]
+2024-05-18 20:48:19.381 [45783] main/107/checkpoint_daemon I> scheduled next checkpoint for Sat May 18 22:09:13 2024
+2024-05-18 20:48:19.381 [45783] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 20:48:19.381 [45783] main/104/interactive/box.load_cfg I> set 'metrics' configuration option to {"labels":{"alias":"instance003"},"include":["all"],"exclude":[]}
+2024-05-18 20:48:19.381 [45783] main I> entering the event loop
+2024-05-18 20:48:19.381 [45783] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 20:48:19.381 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 13} local vclock {0: 1, 1: 13}
+2024-05-18 20:48:19.381 [45783] main/111/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 23, aka 127.0.0.1:3303, peer of 127.0.0.1:57775
+2024-05-18 20:48:19.381 [45783] main/111/main I> remote vclock {1: 13} local vclock {0: 1, 1: 13}
+2024-05-18 20:48:19.381 [45783] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 20:48:19.381 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 13} local vclock {0: 1, 1: 13}
+2024-05-18 20:48:19.381 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 2, vote: 1, state: follower} from 1
+2024-05-18 20:48:19.381 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 20:48:19.382 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 2, state: follower} from 3
+2024-05-18 20:48:19.382 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 2, state: follower} from 3
+2024-05-18 20:48:19.382 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 2, vote: 1, state: follower} from 1
+2024-05-18 20:48:19.382 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 20:48:19.382 [45783] relay/127.0.0.1:57775/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 20:48:19.382 [45783] main/123/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 34, aka 127.0.0.1:3303, peer of 127.0.0.1:57791
+2024-05-18 20:48:19.382 [45783] main/123/main I> remote vclock {1: 13} local vclock {0: 1, 1: 13}
+2024-05-18 20:48:19.382 [45783] main/106/gc I> wal/engine cleanup is resumed
+2024-05-18 20:48:19.382 [45783] relay/127.0.0.1:57791/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 20:48:20.386 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: fencing resumed
+2024-05-18 20:48:20.386 [45783] main/113/applier/replicator@127.0.0.1:3302 I> leaving orphan mode
+2024-05-18 20:48:24.386 [45783] main I> RAFT: begin new election round
+2024-05-18 20:48:24.386 [45783] main I> RAFT: bump term to 3, follow
+2024-05-18 20:48:24.386 [45783] main I> RAFT: vote for 2, follow
+2024-05-18 20:48:24.387 [45783] main/118/raft_worker I> RAFT: persisted state {term: 3, vote: 2}
+2024-05-18 20:48:24.387 [45783] main/118/raft_worker I> RAFT: enter candidate state with 1 self vote
+2024-05-18 20:48:24.388 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 3, vote: 3, state: candidate, vclock: {1: 13}} from 3
+2024-05-18 20:48:24.388 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 20:48:24.388 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 3, vote: 1, state: candidate, vclock: {1: 13}} from 1
+2024-05-18 20:48:24.388 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: split vote is discovered - {1: 1, 2: 1, 3: 1}, new term in 0.401000 sec
+2024-05-18 20:48:24.388 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 20:48:24.649 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 4, vote: 1, state: candidate, vclock: {1: 13}} from 1
+2024-05-18 20:48:24.649 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: received a newer term from 1
+2024-05-18 20:48:24.649 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: bump term to 4, follow
+2024-05-18 20:48:24.649 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote for 1, follow
+2024-05-18 20:48:24.649 [45783] main/118/raft_worker I> RAFT: persisted state {term: 4}
+2024-05-18 20:48:24.649 [45783] main/118/raft_worker I> RAFT: persisted state {term: 4, vote: 1}
+2024-05-18 20:48:24.649 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 4, state: follower} from 3
+2024-05-18 20:48:24.649 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 4, vote: 1, state: follower} from 3
+2024-05-18 20:48:24.649 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 20:48:24.650 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 4, vote: 1, leader: 1, state: leader} from 1
+2024-05-18 20:48:24.650 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 20:48:24.650 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: leader is 1, follow
+2024-05-18 20:48:24.650 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 4, vote: 1, leader: 1, leader is seen: true, state: follower} from 3
+2024-05-18 20:48:24.650 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - the leader is already known - 1
+2024-05-18 20:53:16.829 [45783] applier_1/103/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 20:53:16.829 [45783] applier_1/103/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 20:53:16.829 [45783] applier_1/105/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302' has been cancelled
+2024-05-18 20:53:16.829 [45783] applier_1/105/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302': exiting
+2024-05-18 20:53:16.829 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 20:53:16.829 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 31, aka 127.0.0.1:57787, peer of 127.0.0.1:3301: Broken pipe
+2024-05-18 20:53:16.829 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 20:53:16.829 [45783] main/113/applier/replicator@127.0.0.1:3302 I> can't read row
+2024-05-18 20:53:16.829 [45783] main/113/applier/replicator@127.0.0.1:3302 coio.c:300 E> TimedOut: timed out
+2024-05-18 20:53:16.829 [45783] main/113/applier/replicator@127.0.0.1:3302 I> will retry every 1.00 second
+2024-05-18 20:53:16.829 [45783] relay/127.0.0.1:57775/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 20:53:16.829 [45783] relay/127.0.0.1:57775/101/main I> exiting the relay loop
+2024-05-18 20:53:16.829 [45783] relay/127.0.0.1:57791/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 20:53:16.829 [45783] relay/127.0.0.1:57791/101/main I> exiting the relay loop
+2024-05-18 20:53:17.830 [45783] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 20:53:17.830 [45783] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 20:53:17.830 [45783] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 20:53:17.830 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 18, 3: 1} local vclock {0: 4, 1: 18}
+2024-05-18 20:53:17.831 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 5, vote: 3, leader: 3, state: leader} from 3
+2024-05-18 20:53:17.831 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: received a newer term from 3
+2024-05-18 20:53:17.831 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: bump term to 5, follow
+2024-05-18 20:53:17.831 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 20:53:17.831 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: leader is 3, follow
+2024-05-18 20:53:17.831 [45783] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 20:53:17.831 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 18, 3: 1} local vclock {0: 4, 1: 18}
+2024-05-18 20:53:17.831 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 5, vote: 3, leader: 3, leader is seen: true, state: follower} from 1
+2024-05-18 20:53:17.831 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 3
+2024-05-18 20:53:17.831 [45783] main/118/raft_worker I> RAFT: persisted state {term: 5}
+2024-05-18 20:53:17.831 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 5, vote: 3, leader: 3, state: leader} from 3
+2024-05-18 20:53:17.831 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - the leader is already known - 3
+2024-05-18 20:53:17.831 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 5, vote: 3, leader: 3, leader is seen: true, state: follower} from 1
+2024-05-18 20:53:17.831 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 3
+2024-05-18 20:53:17.831 [45783] main/125/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 27, aka 127.0.0.1:3303, peer of 127.0.0.1:57832
+2024-05-18 20:53:17.831 [45783] main/125/main I> remote vclock {1: 18, 3: 1} local vclock {0: 5, 1: 18}
+2024-05-18 20:53:17.831 [45783] main I> leaving orphan mode
+2024-05-18 20:53:17.831 [45783] main/128/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 30, aka 127.0.0.1:3303, peer of 127.0.0.1:57833
+2024-05-18 20:53:17.831 [45783] main/128/main I> remote vclock {1: 18, 3: 1} local vclock {0: 5, 1: 18, 3: 1}
+2024-05-18 20:53:17.831 [45783] relay/127.0.0.1:57833/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 20:53:17.831 [45783] relay/127.0.0.1:57832/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 20:57:00.748 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 5, vote: 3, leader: 3, state: follower} from 1
+2024-05-18 20:57:00.748 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: begin new election round
+2024-05-18 20:57:00.748 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: bump term to 6, follow
+2024-05-18 20:57:00.748 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote for 2, follow
+2024-05-18 20:57:00.748 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 20:57:00.749 [45783] applier_1/107/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302' has been cancelled
+2024-05-18 20:57:00.749 [45783] applier_1/107/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302': exiting
+2024-05-18 20:57:00.749 [45783] main/113/applier/replicator@127.0.0.1:3302 I> can't read row
+2024-05-18 20:57:00.749 [45783] main/113/applier/replicator@127.0.0.1:3302 coio.c:300 E> TimedOut: timed out
+2024-05-18 20:57:00.749 [45783] main/113/applier/replicator@127.0.0.1:3302 I> will retry every 1.00 second
+2024-05-18 20:57:00.749 [45783] main/118/raft_worker I> RAFT: persisted state {term: 6, vote: 2}
+2024-05-18 20:57:00.749 [45783] main/118/raft_worker I> RAFT: enter candidate state with 1 self vote
+2024-05-18 20:57:00.749 [45783] relay/127.0.0.1:57832/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 20:57:00.749 [45783] relay/127.0.0.1:57832/101/main I> exiting the relay loop
+2024-05-18 20:57:00.749 [45783] relay/127.0.0.1:57833/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 20:57:00.749 [45783] relay/127.0.0.1:57833/101/main I> exiting the relay loop
+2024-05-18 20:57:00.749 [45783] applier_1/109/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 20:57:00.749 [45783] applier_1/109/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 20:57:00.749 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 20:57:00.749 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 26, aka 127.0.0.1:57831, peer of 127.0.0.1:3301: Broken pipe
+2024-05-18 20:57:00.749 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 20:57:01.751 [45783] main/130/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 25, aka 127.0.0.1:3303, peer of 127.0.0.1:57854
+2024-05-18 20:57:01.751 [45783] main/130/main I> remote vclock {1: 18, 3: 1} local vclock {0: 6, 1: 18, 3: 1}
+2024-05-18 20:57:01.751 [45783] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 20:57:01.751 [45783] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 20:57:01.751 [45783] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 20:57:01.751 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 18, 3: 1} local vclock {0: 6, 1: 18, 3: 1}
+2024-05-18 20:57:01.751 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 6, state: follower} from 3
+2024-05-18 20:57:01.751 [45783] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 20:57:01.751 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 18, 3: 1} local vclock {0: 6, 1: 18, 3: 1}
+2024-05-18 20:57:01.751 [45783] relay/127.0.0.1:57854/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 20:57:01.751 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 6, vote: 1, state: candidate, vclock: {1: 18, 3: 1}} from 1
+2024-05-18 20:57:01.751 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 20:57:01.751 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 6, state: follower} from 3
+2024-05-18 20:57:01.751 [45783] main/133/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 28, aka 127.0.0.1:3303, peer of 127.0.0.1:57858
+2024-05-18 20:57:01.751 [45783] main/133/main I> remote vclock {1: 18, 3: 1} local vclock {0: 6, 1: 18, 3: 1}
+2024-05-18 20:57:01.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 6, vote: 1, state: candidate, vclock: {1: 18, 3: 1}} from 1
+2024-05-18 20:57:01.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 20:57:01.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 6, vote: 1, state: follower} from 3
+2024-05-18 20:57:01.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: split vote is discovered - {1: 1, 2: 1, 3: 1}, new term in 0.177000 sec
+2024-05-18 20:57:01.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 20:57:01.752 [45783] relay/127.0.0.1:57858/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 20:57:01.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 6, vote: 1, leader: 1, state: leader} from 1
+2024-05-18 20:57:01.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 20:57:01.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: leader is 1, follow
+2024-05-18 20:57:01.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 6, vote: 1, leader: 1, leader is seen: true, state: follower} from 3
+2024-05-18 20:57:01.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - the leader is already known - 1
+2024-05-18 20:57:02.757 [45783] main/113/applier/replicator@127.0.0.1:3302 I> leaving orphan mode
+2024-05-18 21:14:29.762 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 6, vote: 1, leader: 1, state: follower} from 3
+2024-05-18 21:14:29.762 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: begin new election round
+2024-05-18 21:14:29.762 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: bump term to 7, follow
+2024-05-18 21:14:29.762 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote for 2, follow
+2024-05-18 21:14:29.762 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 21:14:29.763 [45783] applier_1/113/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 21:14:29.763 [45783] applier_1/113/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 21:14:29.763 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 21:14:29.763 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:300 E> TimedOut: timed out
+2024-05-18 21:14:29.763 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 21:14:29.763 [45783] main/118/raft_worker I> RAFT: persisted state {term: 7, vote: 2}
+2024-05-18 21:14:29.763 [45783] main/118/raft_worker I> RAFT: enter candidate state with 1 self vote
+2024-05-18 21:14:29.764 [45783] relay/127.0.0.1:57854/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:14:29.764 [45783] relay/127.0.0.1:57854/101/main I> exiting the relay loop
+2024-05-18 21:14:29.764 [45783] relay/127.0.0.1:57858/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:14:29.764 [45783] relay/127.0.0.1:57858/101/main I> exiting the relay loop
+2024-05-18 21:14:29.764 [45783] applier_1/111/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302' has been cancelled
+2024-05-18 21:14:29.764 [45783] applier_1/111/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302': exiting
+2024-05-18 21:14:29.764 [45783] main/113/applier/replicator@127.0.0.1:3302 I> can't read row
+2024-05-18 21:14:29.765 [45783] main/113/applier/replicator@127.0.0.1:3302 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 26, aka 127.0.0.1:57855, peer of 127.0.0.1:3302: Broken pipe
+2024-05-18 21:14:29.765 [45783] main/113/applier/replicator@127.0.0.1:3302 I> will retry every 1.00 second
+2024-05-18 21:14:30.767 [45783] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 21:14:30.767 [45783] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 21:14:30.767 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 19, 3: 1} local vclock {0: 7, 1: 19, 3: 1}
+2024-05-18 21:14:30.768 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 7, state: follower} from 1
+2024-05-18 21:14:30.768 [45783] main/135/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 29, aka 127.0.0.1:3303, peer of 127.0.0.1:57924
+2024-05-18 21:14:30.768 [45783] main/135/main I> remote vclock {1: 19, 3: 1} local vclock {0: 7, 1: 19, 3: 1}
+2024-05-18 21:14:30.769 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 7, state: follower} from 1
+2024-05-18 21:14:30.769 [45783] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 21:14:30.770 [45783] main/138/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 28, aka 127.0.0.1:3303, peer of 127.0.0.1:57923
+2024-05-18 21:14:30.770 [45783] main/138/main I> remote vclock {1: 19, 3: 1} local vclock {0: 7, 1: 19, 3: 1}
+2024-05-18 21:14:30.771 [45783] relay/127.0.0.1:57924/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:14:30.771 [45783] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 21:14:30.771 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 19, 3: 1} local vclock {0: 7, 1: 19, 3: 1}
+2024-05-18 21:14:30.772 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 7, vote: 3, state: follower} from 1
+2024-05-18 21:14:30.772 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: split vote is discovered - {1: 1, 2: 1, 3: 1}, new term in 0.318000 sec
+2024-05-18 21:14:30.772 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 21:14:30.772 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 7, vote: 3, state: candidate, vclock: {1: 19, 3: 1}} from 3
+2024-05-18 21:14:30.772 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 21:14:30.772 [45783] relay/127.0.0.1:57923/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:14:30.773 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 7, vote: 3, leader: 3, state: leader} from 3
+2024-05-18 21:14:30.773 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 21:14:30.773 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: leader is 3, follow
+2024-05-18 21:14:30.773 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 7, vote: 3, leader: 3, leader is seen: true, state: follower} from 1
+2024-05-18 21:14:30.773 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 3
+2024-05-18 21:14:31.785 [45783] main/112/applier/replicator@127.0.0.1:3301 I> leaving orphan mode
+2024-05-18 21:32:03.758 [45783] applier_1/115/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 21:32:03.758 [45783] applier_1/115/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 21:32:03.758 [45783] applier_1/117/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302' has been cancelled
+2024-05-18 21:32:03.758 [45783] applier_1/117/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302': exiting
+2024-05-18 21:32:03.758 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 21:32:03.759 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 25, aka 127.0.0.1:57919, peer of 127.0.0.1:3301: Broken pipe
+2024-05-18 21:32:03.759 [45783] relay/127.0.0.1:57923/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:32:03.759 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 21:32:03.759 [45783] relay/127.0.0.1:57923/101/main I> exiting the relay loop
+2024-05-18 21:32:03.759 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: begin new election round
+2024-05-18 21:32:03.759 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: bump term to 8, follow
+2024-05-18 21:32:03.759 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote for 2, follow
+2024-05-18 21:32:03.759 [45783] main/113/applier/replicator@127.0.0.1:3302 I> can't read row
+2024-05-18 21:32:03.759 [45783] main/113/applier/replicator@127.0.0.1:3302 coio.c:300 E> TimedOut: timed out
+2024-05-18 21:32:03.759 [45783] main/113/applier/replicator@127.0.0.1:3302 I> will retry every 1.00 second
+2024-05-18 21:32:03.759 [45783] relay/127.0.0.1:57924/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:32:03.759 [45783] relay/127.0.0.1:57924/101/main I> exiting the relay loop
+2024-05-18 21:32:03.759 [45783] main/118/raft_worker I> RAFT: persisted state {term: 8, vote: 2}
+2024-05-18 21:32:04.764 [45783] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 21:32:04.764 [45783] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 21:32:04.766 [45783] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 21:32:04.766 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 19, 3: 2} local vclock {0: 8, 1: 19, 3: 2}
+2024-05-18 21:32:04.766 [45783] main/140/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 28, aka 127.0.0.1:3303, peer of 127.0.0.1:57941
+2024-05-18 21:32:04.766 [45783] main/140/main I> remote vclock {1: 19, 3: 2} local vclock {0: 8, 1: 19, 3: 2}
+2024-05-18 21:32:04.766 [45783] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 21:32:04.766 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 19, 3: 2} local vclock {0: 8, 1: 19, 3: 2}
+2024-05-18 21:32:04.766 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 7, vote: 3, state: follower} from 3
+2024-05-18 21:32:04.766 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: the message is ignored due to outdated term - current term is 8
+2024-05-18 21:32:04.767 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 7, vote: 3, leader: 3, state: follower} from 1
+2024-05-18 21:32:04.767 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: the message is ignored due to outdated term - current term is 8
+2024-05-18 21:32:04.768 [45783] relay/127.0.0.1:57941/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:32:04.768 [45783] main/143/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 27, aka 127.0.0.1:3303, peer of 127.0.0.1:57939
+2024-05-18 21:32:04.768 [45783] main/143/main I> remote vclock {1: 19, 3: 2} local vclock {0: 8, 1: 19, 3: 2}
+2024-05-18 21:32:04.769 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 7, vote: 3, state: follower} from 3
+2024-05-18 21:32:04.769 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: the message is ignored due to outdated term - current term is 8
+2024-05-18 21:32:04.769 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 8, state: follower} from 3
+2024-05-18 21:32:04.769 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 7, vote: 3, leader: 3, state: follower} from 1
+2024-05-18 21:32:04.769 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: the message is ignored due to outdated term - current term is 8
+2024-05-18 21:32:04.770 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 7, vote: 3, state: follower} from 1
+2024-05-18 21:32:04.770 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: the message is ignored due to outdated term - current term is 8
+2024-05-18 21:32:04.770 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 8, state: follower} from 1
+2024-05-18 21:32:04.770 [45783] relay/127.0.0.1:57939/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:32:06.787 [45783] main/112/applier/replicator@127.0.0.1:3301 I> leaving orphan mode
+2024-05-18 21:35:43.397 [45783] main I> RAFT: begin new election round
+2024-05-18 21:35:43.397 [45783] main I> RAFT: bump term to 9, follow
+2024-05-18 21:35:43.397 [45783] main I> RAFT: vote for 2, follow
+2024-05-18 21:35:43.401 [45783] main/118/raft_worker I> RAFT: persisted state {term: 9, vote: 2}
+2024-05-18 21:35:43.401 [45783] main/118/raft_worker I> RAFT: enter candidate state with 1 self vote
+2024-05-18 21:35:43.402 [45783] applier_1/119/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302' has been cancelled
+2024-05-18 21:35:43.402 [45783] applier_1/119/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302': exiting
+2024-05-18 21:35:43.402 [45783] applier_1/121/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 21:35:43.402 [45783] applier_1/121/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 21:35:43.402 [45783] relay/127.0.0.1:57941/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:35:43.402 [45783] relay/127.0.0.1:57941/101/main I> exiting the relay loop
+2024-05-18 21:35:43.402 [45783] main/113/applier/replicator@127.0.0.1:3302 I> can't read row
+2024-05-18 21:35:43.402 [45783] main/113/applier/replicator@127.0.0.1:3302 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 25, aka 127.0.0.1:57938, peer of 127.0.0.1:3302: Broken pipe
+2024-05-18 21:35:43.402 [45783] main/113/applier/replicator@127.0.0.1:3302 I> will retry every 1.00 second
+2024-05-18 21:35:43.402 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 21:35:43.402 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:300 E> TimedOut: timed out
+2024-05-18 21:35:43.402 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 21:35:43.402 [45783] relay/127.0.0.1:57939/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:35:43.402 [45783] relay/127.0.0.1:57939/101/main I> exiting the relay loop
+2024-05-18 21:35:44.404 [45783] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 21:35:44.405 [45783] main/140/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 27, aka 127.0.0.1:3303, peer of 127.0.0.1:57958
+2024-05-18 21:35:44.405 [45783] main/140/main I> remote vclock {1: 19, 3: 2} local vclock {0: 9, 1: 19, 3: 2}
+2024-05-18 21:35:44.405 [45783] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 21:35:44.405 [45783] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 21:35:44.405 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 19, 3: 2} local vclock {0: 9, 1: 19, 3: 2}
+2024-05-18 21:35:44.405 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 9, vote: 1, state: candidate, vclock: {1: 19, 3: 2}} from 1
+2024-05-18 21:35:44.405 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 21:35:44.405 [45783] relay/127.0.0.1:57958/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:35:44.405 [45783] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 21:35:44.405 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 19, 3: 2} local vclock {0: 9, 1: 19, 3: 2}
+2024-05-18 21:35:44.405 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 9, vote: 3, state: candidate, vclock: {1: 19, 3: 2}} from 3
+2024-05-18 21:35:44.405 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: split vote is discovered - {1: 1, 2: 1, 3: 1}, new term in 0.054000 sec
+2024-05-18 21:35:44.405 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 21:35:44.405 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 9, vote: 3, state: candidate, vclock: {1: 19, 3: 2}} from 3
+2024-05-18 21:35:44.405 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 21:35:44.405 [45783] main/143/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 31, aka 127.0.0.1:3303, peer of 127.0.0.1:57967
+2024-05-18 21:35:44.405 [45783] main/143/main I> remote vclock {1: 19, 3: 2} local vclock {0: 9, 1: 19, 3: 2}
+2024-05-18 21:35:44.406 [45783] relay/127.0.0.1:57967/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:35:44.461 [45783] main I> RAFT: begin new election round
+2024-05-18 21:35:44.461 [45783] main I> RAFT: bump term to 10, follow
+2024-05-18 21:35:44.461 [45783] main I> RAFT: vote for 2, follow
+2024-05-18 21:35:44.461 [45783] main/118/raft_worker I> RAFT: persisted state {term: 10, vote: 2}
+2024-05-18 21:35:44.461 [45783] main/118/raft_worker I> RAFT: enter candidate state with 1 self vote
+2024-05-18 21:35:44.461 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 10, state: follower} from 3
+2024-05-18 21:35:44.461 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 10, vote: 2, state: follower} from 3
+2024-05-18 21:35:44.461 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: enter leader state with quorum 2
+2024-05-18 21:35:44.461 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 10, state: follower} from 1
+2024-05-18 21:35:44.461 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 10, vote: 2, state: follower} from 1
+2024-05-18 21:35:44.461 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 2
+2024-05-18 21:35:44.462 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 10, vote: 2, leader: 2, leader is seen: true, state: follower} from 1
+2024-05-18 21:35:44.462 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 2
+2024-05-18 21:35:44.462 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 10, vote: 2, leader: 2, leader is seen: true, state: follower} from 3
+2024-05-18 21:35:44.462 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - the leader is already known - 2
+2024-05-18 21:35:46.471 [45783] main/113/applier/replicator@127.0.0.1:3302 I> leaving orphan mode
+2024-05-18 21:51:49.747 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 10, vote: 2, leader: 2, state: follower} from 1
+2024-05-18 21:51:49.747 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 2
+2024-05-18 21:51:49.747 [45783] applier_1/125/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302' has been cancelled
+2024-05-18 21:51:49.747 [45783] applier_1/125/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302': exiting
+2024-05-18 21:51:49.747 [45783] relay/127.0.0.1:57958/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:51:49.747 [45783] relay/127.0.0.1:57958/101/main I> exiting the relay loop
+2024-05-18 21:51:49.750 [45783] main/113/applier/replicator@127.0.0.1:3302 I> can't read row
+2024-05-18 21:51:49.750 [45783] main/113/applier/replicator@127.0.0.1:3302 coio.c:300 E> TimedOut: timed out
+2024-05-18 21:51:49.750 [45783] main/113/applier/replicator@127.0.0.1:3302 I> will retry every 1.00 second
+2024-05-18 21:51:49.750 [45783] applier_1/123/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 21:51:49.750 [45783] applier_1/123/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 21:51:49.750 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 21:51:49.750 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 26, aka 127.0.0.1:57961, peer of 127.0.0.1:3301: Broken pipe
+2024-05-18 21:51:49.750 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 21:51:49.750 [45783] relay/127.0.0.1:57967/101/main coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 31, aka 127.0.0.1:3303, peer of 127.0.0.1:57967: Broken pipe
+2024-05-18 21:51:49.750 [45783] relay/127.0.0.1:57967/101/main I> exiting the relay loop
+2024-05-18 21:51:49.750 [45783] main/112/applier/replicator@127.0.0.1:3301 raft.c:1221 W> RAFT: resigning from leader state
+2024-05-18 21:51:50.750 [45783] main/143/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 25, aka 127.0.0.1:3303, peer of 127.0.0.1:57973
+2024-05-18 21:51:50.750 [45783] main/143/main I> remote vclock {1: 19, 2: 1, 3: 2} local vclock {0: 10, 1: 19, 2: 1, 3: 2}
+2024-05-18 21:51:50.751 [45783] relay/127.0.0.1:57973/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:51:50.751 [45783] main/140/main I> RAFT: received a newer term from 3
+2024-05-18 21:51:50.751 [45783] main/140/main I> RAFT: bump term to 11, follow
+2024-05-18 21:51:50.751 [45783] main/118/raft_worker I> RAFT: persisted state {term: 11}
+2024-05-18 21:51:50.751 [45783] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 21:51:50.751 [45783] main/140/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 30, aka 127.0.0.1:3303, peer of 127.0.0.1:57976
+2024-05-18 21:51:50.751 [45783] main/140/main I> remote vclock {1: 19, 2: 1, 3: 2} local vclock {0: 11, 1: 19, 2: 1, 3: 2}
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 19, 2: 1, 3: 2} local vclock {0: 11, 1: 19, 2: 1, 3: 2}
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 11, vote: 3, state: candidate, vclock: {1: 19, 2: 1, 3: 2}} from 3
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote for 3, follow
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 19, 2: 1, 3: 2} local vclock {0: 11, 1: 19, 2: 1, 3: 2}
+2024-05-18 21:51:50.752 [45783] main/118/raft_worker I> RAFT: persisted state {term: 11, vote: 3}
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 11, vote: 1, state: follower} from 1
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 21:51:50.752 [45783] relay/127.0.0.1:57976/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 11, vote: 3, state: candidate, vclock: {1: 19, 2: 1, 3: 2}} from 3
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - already voted in this term
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 11, vote: 1, state: follower} from 1
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 11, vote: 3, leader: 3, state: leader} from 3
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 21:51:50.752 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: leader is 3, follow
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 11, vote: 1, leader: 3, leader is seen: true, state: follower} from 1
+2024-05-18 21:51:50.752 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 3
+2024-05-18 21:51:51.762 [45783] main/112/applier/replicator@127.0.0.1:3301 I> leaving orphan mode
+2024-05-18 21:52:49.360 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 11, vote: 1, leader: 3, state: follower} from 1
+2024-05-18 21:52:49.360 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: begin new election round
+2024-05-18 21:52:49.360 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: bump term to 12, follow
+2024-05-18 21:52:49.360 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote for 2, follow
+2024-05-18 21:52:49.360 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - this is a notification about a vote for a third node, not a request
+2024-05-18 21:52:49.361 [45783] applier_1/127/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302' has been cancelled
+2024-05-18 21:52:49.361 [45783] applier_1/127/writer/replicator@127.0.0.1:3302 I> fiber `writer/replicator@127.0.0.1:3302': exiting
+2024-05-18 21:52:49.361 [45783] main/118/raft_worker I> RAFT: persisted state {term: 12, vote: 2}
+2024-05-18 21:52:49.361 [45783] main/118/raft_worker I> RAFT: enter candidate state with 1 self vote
+2024-05-18 21:52:49.361 [45783] main/113/applier/replicator@127.0.0.1:3302 I> can't read row
+2024-05-18 21:52:49.361 [45783] main/113/applier/replicator@127.0.0.1:3302 coio.c:300 E> TimedOut: timed out
+2024-05-18 21:52:49.361 [45783] main/113/applier/replicator@127.0.0.1:3302 I> will retry every 1.00 second
+2024-05-18 21:52:49.361 [45783] relay/127.0.0.1:57976/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:52:49.361 [45783] relay/127.0.0.1:57976/101/main I> exiting the relay loop
+2024-05-18 21:52:49.362 [45783] relay/127.0.0.1:57973/101/main coio.c:300 E> TimedOut: timed out
+2024-05-18 21:52:49.362 [45783] relay/127.0.0.1:57973/101/main I> exiting the relay loop
+2024-05-18 21:52:49.362 [45783] applier_1/129/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 21:52:49.362 [45783] applier_1/129/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 21:52:49.362 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 21:52:49.362 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 29, aka 127.0.0.1:57978, peer of 127.0.0.1:3301: Broken pipe
+2024-05-18 21:52:49.362 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 21:52:50.362 [45783] main/113/applier/replicator@127.0.0.1:3302 I> authenticated
+2024-05-18 21:52:50.362 [45783] main/113/applier/replicator@127.0.0.1:3302 I> subscribed
+2024-05-18 21:52:50.362 [45783] main/113/applier/replicator@127.0.0.1:3302 I> remote vclock {1: 19, 2: 1, 3: 3} local vclock {0: 13, 1: 19, 2: 1, 3: 3}
+2024-05-18 21:52:50.362 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 11, vote: 3, state: follower} from 3
+2024-05-18 21:52:50.362 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: the message is ignored due to outdated term - current term is 12
+2024-05-18 21:52:50.362 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 11, vote: 3, state: follower} from 3
+2024-05-18 21:52:50.362 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: the message is ignored due to outdated term - current term is 12
+2024-05-18 21:52:50.362 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 12, state: follower} from 3
+2024-05-18 21:52:50.363 [45783] main/112/applier/replicator@127.0.0.1:3301 I> authenticated
+2024-05-18 21:52:50.363 [45783] main/140/main I> subscribed replica 34aea3dc-2b9a-4ea5-8708-a570221fa7c7 at fd 27, aka 127.0.0.1:3303, peer of 127.0.0.1:58006
+2024-05-18 21:52:50.363 [45783] main/140/main I> remote vclock {1: 19, 2: 1, 3: 3} local vclock {0: 13, 1: 19, 2: 1, 3: 3}
+2024-05-18 21:52:50.363 [45783] main/112/applier/replicator@127.0.0.1:3301 I> subscribed
+2024-05-18 21:52:50.363 [45783] main/112/applier/replicator@127.0.0.1:3301 I> remote vclock {1: 19, 2: 1, 3: 3} local vclock {0: 13, 1: 19, 2: 1, 3: 3}
+2024-05-18 21:52:50.363 [45783] main/153/main I> subscribed replica 36952efe-e2ad-49df-b2da-91913b41740d at fd 28, aka 127.0.0.1:3303, peer of 127.0.0.1:58007
+2024-05-18 21:52:50.363 [45783] main/153/main I> remote vclock {1: 19, 2: 1, 3: 3} local vclock {0: 13, 1: 19, 2: 1, 3: 3}
+2024-05-18 21:52:50.363 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 12, vote: 1, state: candidate, vclock: {1: 19, 2: 1, 3: 3}} from 1
+2024-05-18 21:52:50.363 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 21:52:50.363 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 12, vote: 1, state: candidate, vclock: {1: 19, 2: 1, 3: 3}} from 1
+2024-05-18 21:52:50.363 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - competing candidate
+2024-05-18 21:52:50.363 [45783] relay/127.0.0.1:58006/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:52:50.364 [45783] relay/127.0.0.1:58007/101/main I> recover from `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000014.xlog'
+2024-05-18 21:52:50.364 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 12, vote: 2, state: follower} from 3
+2024-05-18 21:52:50.364 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: enter leader state with quorum 2
+2024-05-18 21:52:50.364 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: message {term: 12, vote: 2, leader: 2, leader is seen: true, state: follower} from 3
+2024-05-18 21:52:50.364 [45783] main/113/applier/replicator@127.0.0.1:3302 I> RAFT: vote request is skipped - the leader is already known - 2
+2024-05-18 21:52:50.364 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: message {term: 12, vote: 1, leader: 2, leader is seen: true, state: follower} from 1
+2024-05-18 21:52:50.364 [45783] main/112/applier/replicator@127.0.0.1:3301 I> RAFT: vote request is skipped - the leader is already known - 2
+2024-05-18 21:52:52.371 [45783] main/112/applier/replicator@127.0.0.1:3301 I> leaving orphan mode
+2024-05-18 22:09:13.386 [45783] snapshot/101/main I> saving snapshot `/Users/agarkov/sbt-db/tarantool/instances.enabled/auto_leader/var/lib/instance003/00000000000000000037.snap.inprogress'
+2024-05-18 22:09:13.388 [45783] snapshot/101/main I> done
+2024-05-18 22:09:13.389 [45783] main/107/checkpoint_daemon I> scheduled next checkpoint for Sat May 18 23:09:13 2024
+2024-05-18 23:09:13.386 [45783] main/107/checkpoint_daemon I> scheduled next checkpoint for Sun May 19 00:09:13 2024
+2024-05-18 23:10:51.669 [45783] applier_1/133/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301' has been cancelled
+2024-05-18 23:10:51.669 [45783] applier_1/133/writer/replicator@127.0.0.1:3301 I> fiber `writer/replicator@127.0.0.1:3301': exiting
+2024-05-18 23:10:51.669 [45783] main/112/applier/replicator@127.0.0.1:3301 I> can't read row
+2024-05-18 23:10:51.669 [45783] main/112/applier/replicator@127.0.0.1:3301 coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 26, aka 127.0.0.1:58008, peer of 127.0.0.1:3301: Broken pipe
+2024-05-18 23:10:51.669 [45783] main/112/applier/replicator@127.0.0.1:3301 I> will retry every 1.00 second
+2024-05-18 23:10:51.669 [45783] relay/127.0.0.1:58006/101/main coio.c:353 E> SocketError: unexpected EOF when reading from socket, called on fd 27, aka 127.0.0.1:3303, peer of 127.0.0.1:58006: Broken pipe
+2024-05-18 23:10:51.669 [45783] relay/127.0.0.1:58006/101/main I> exiting the relay loop
